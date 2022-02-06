@@ -67,6 +67,10 @@ font-weight: bold;
 font-size: 26px;
 line-height: 31px;
 color: #2196F3;
+margin-right: 93px;
+display: block;
+padding-top: 24px;
+padding-bottom: 25px;
 }
 .logo span { color: #212121;}
 .logo:hover {
@@ -76,6 +80,33 @@ color: #2196F3;
     color: var(--accent-color);
 }
 
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-flex li {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-flex li + li {
+    margin-left: 50px;
+}
+
+nav {
+    display: flex; 
+}
+
+nav ul {
+    display: flex;
+}
+
+.header-flex> ul {
+    display: flex;
+    margin-left: auto;
+}
 
 .header .list {
     font-weight: 500;
