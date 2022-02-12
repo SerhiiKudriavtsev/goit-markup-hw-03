@@ -68,9 +68,7 @@ font-size: 26px;
 line-height: 31px;
 color: #2196F3;
 margin-right: 93px;
-display: block;
-padding-top: 24px;
-padding-bottom: 25px;
+align-self: center;
 }
 .logo span { color: #212121;}
 .logo:hover {
@@ -132,7 +130,7 @@ nav ul {
 }
 .hero {
     margin-top:0px;
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -182,13 +180,34 @@ h2 {font-weight: 700;
     margin-bottom: 50px;
 }
 
-ul {margin-top: 0px;
-    margin-bottom: 0px;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.section {
-    margin-bottom: 94px;
+.list {
+    display: flex;
 }
+
+.list>li {
+    display: flex;
+} 
+.list>li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.section-doing {
+    padding-bottom: 94px;
+}
+
+.doing {
+    display: flex;
+}
+
+.doing>li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .section h3 {
     font-weight: 700;
     font-size: 14px;
@@ -239,6 +258,19 @@ p {
     margin-bottom: 0px;
 }
 
+.list-team {
+    display: flex;
+}
+
+.list-team>li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nomber-team {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
 /* Футер */
 .footer {
     font-weight: 400;
@@ -255,8 +287,10 @@ p {
 }
 
 .footer-logof {
+    /* display: contents;   */
     margin-bottom: 20px;
 }
+
 .logof span {
     color: var(--hero-text-color);
 }
@@ -284,10 +318,14 @@ address li {
 .portfolio-margins {
     margin-top: 94px;
     margin-bottom: 94px;
+
 }
 
 .buttons {
     margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+
 }
 .buttons button{
     color: var(--primery-text-color);
@@ -297,12 +335,34 @@ address li {
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
+    border-color: transparent;
+    box-shadow: none;
+    padding: 6px 22px;
 }
+
+.buttons>li {
+    display:flex;
+}
+
+.buttons>li:not(:last-child) {
+    margin-right: 8px;
+}
+
 .buttons button:hover,
 .buttons button:focus{
     color: var(--hero-text-color);
     background-color: var(--accent-color);
 }
+
+.cards {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.cards>li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
 .cards h2{
     font-weight: 700;
     font-size: 18px;
@@ -326,5 +386,9 @@ address li {
 .card {
     padding-bottom: 20px;
     margin-bottom: 30px;
+    background: #FFFFFF;
+    outline: 1px solid #EEEEEE;
 }
+
+
 
