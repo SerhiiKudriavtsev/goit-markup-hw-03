@@ -94,8 +94,6 @@ li {
 
 .header-flex li {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-flex li + li {
@@ -120,6 +118,8 @@ nav ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .mailh,
 .telh {
@@ -137,12 +137,14 @@ nav ul {
 /* ===hero=== */
 .section-hero {
   background-color: var(--background-hero-footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero {
   margin-top: 0px;
   /* margin-bottom: 94px; */
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
   text-align: center;
 }
 h1 {
@@ -325,13 +327,13 @@ address li {
 }
 
 /*==========portfolio========== */
-.portfolio-margins {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .buttons {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
